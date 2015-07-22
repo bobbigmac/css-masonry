@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'Simple css-only masonry package. No javascript, no messing about.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/bobbigmac/css-masonry.git',
   documentation: 'README.md'
 });
 
