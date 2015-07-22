@@ -1,6 +1,6 @@
 # CSS-Masonry
 
-Very simple css-only masonry layout using css3's `column-count` and `column-gap`. Doesn't rely on fixed heights, intended to work with Meteor/Blaze.
+Very simple css-only masonry layout using css3's `column-count` and `column-gap`. Doesn't rely on fixed heights, intended to work with Meteor/Blaze without having to bind up rendered handlers to tie in isotope (and all the management/cleanup that comes with that whole mess).
 
 Responsive and increases column-count at Bootstrap breakpoint dimensions, though will work just fine without Bootstrap.
 
@@ -10,7 +10,7 @@ CSS columns are pretty well supported: http://caniuse.com/#feat=multicolumn
 
 ## Usage
 
-```
+```handlebars
 <div class="masonry-wall">
 	<div class="masonry-brick">
 		<h1>Some big content<br /><br/>More stuff</h2>
@@ -22,12 +22,12 @@ CSS columns are pretty well supported: http://caniuse.com/#feat=multicolumn
 </div>
 ```
 or to be a bit more bootstrappy...
-```
+```handlebars
 <div class="masonry-wall">
 	{{#each someThingsHavePictures}}
 		<div class="masonry-brick">
 			<div class="panel panel-default">
-				<h2 class="panel-heading">{{this.name}}</h2>
+				<div class="panel-heading"><h2 class="panel-title">{{this.name}}</h2></div>
 				{{#if this.img}}
 					<div class="panel-body">
 						<img class="panel-image" src="{{this.img" />
