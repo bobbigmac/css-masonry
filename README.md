@@ -42,3 +42,7 @@ or to be a bit more bootstrappy...
 ## Thanks
 
 Based entirely on http://w3bits.com/css-masonry/
+
+## Feedback 
+
+Any feedback and PRs welcome
