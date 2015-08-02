@@ -39,6 +39,10 @@ or to be a bit more bootstrappy...
 </div>
 ```
 
+## Cap column-count
+
+Added in 1.0.0... cap the number of columns (i.e. don't use 4 columns at max-res) by applying to `.masonry-wall` class of `masonry-cap-1`, `masonry-cap-2` or `masonry-cap-3`.
+
 ## Thanks
 
 Based entirely on http://w3bits.com/css-masonry/
