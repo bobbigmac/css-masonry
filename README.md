@@ -30,7 +30,7 @@ or to be a bit more bootstrappy...
 				<div class="panel-heading"><h2 class="panel-title">{{this.name}}</h2></div>
 				{{#if this.img}}
 					<div class="panel-body">
-						<img class="panel-image" src="{{this.img" />
+						<img class="panel-image" src="{{this.img}}" />
 					</div>
 				{{/if}}
 			</div>
