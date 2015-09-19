@@ -15,7 +15,7 @@ CSS columns are pretty well supported: http://caniuse.com/#feat=multicolumn
 	<div class="masonry-brick">
 		<h1>Some big content<br /><br/>More stuff</h2>
 	</div>
-	<div class="masonry-brick">
+	<div class="masonry-brick masonry-no-break"><!-- will not wrap content to next column-->
 		<h6>Some <small>not as big</small> content</h6>
 	</div>
 	<!-- etc -->

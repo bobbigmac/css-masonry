@@ -13,6 +13,16 @@
 	display: inline-block;
 	width: 100%;
 }
+.masonry-brick.masonry-no-break {
+	/* 
+		fixes breaking mid-content (chrome changed in 45).
+		Not sure how much of a bodge this is. PRs welcome if you have a better solution.
+	*/
+  display: table;
+  -webkit-column-break-inside:avoid;
+     -moz-column-break-inside:avoid;
+          column-break-inside:avoid;
+}
 
 @media only screen and (min-width: 768px) {
 	.masonry-wall {
